@@ -26,11 +26,11 @@ Window:EditOpenButton({
 })
 
 local Tabs = {
-    Main = Window:Tab({ Title = "Auto Win", Icon = "lightbulb" }),
-    Player = Window:Tab({ Title = "Auto Generator", Icon = "rocket" }),
-    Jump = Window:Tab({ Title = "Auto Block", Icon = "bitcoin" }),
-    Glass = Window:Tab({ Title = "Silent Aim", Icon = "grid-2x2" }),
-    Mingle = Window:Tab({ Title = "Auto Punch", Icon = "tent" }),
+    Main = Window:Tab({ Title = "Auto Win", Icon = "trophy" }),
+    Player = Window:Tab({ Title = "Auto Generator", Icon = "cuboid" }),
+    Jump = Window:Tab({ Title = "Auto Block", Icon = "shield-plus" }),
+    Glass = Window:Tab({ Title = "Silent Aim", Icon = "crosshair" }),
+    Mingle = Window:Tab({ Title = "Auto Punch", Icon = "hand-fist" }),
 }
 
 
@@ -40,8 +40,8 @@ Tabs.Jump:Section({
 })
 
 Tabs.Jump:Toggle({
-    Title = "Auto Plasma Beam",
-    Icon = "person-standing",
+    Title = "Auto Block",
+    Icon = "shield",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -50,8 +50,8 @@ Tabs.Jump:Toggle({
 
 
 Tabs.Jump:Toggle({
-    Title = "Auto Block",
-    Icon = "helicopter",
+    Title = "Auto Plasma Beam",
+    Icon = "spotlight",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -77,7 +77,7 @@ Tabs.Jump:Button({
 Tabs.Jump:Button({
     Title = "Punch Combo",
     IconAlign = "Left",
-    Icon = "circle-pound-sterling",
+    Icon = "hand-fist",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
